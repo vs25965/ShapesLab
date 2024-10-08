@@ -18,7 +18,7 @@ int main() {
     RightTriangle RightTriangle1 = RightTriangle();
     assert(RightTriangle1.getArea(12,12) == 72);
     assert(RightTriangle1.getPerimeter(12,12) == 16);
-
+//////
     cout << "Tests Passed!" << endl;
     return 0;
 
