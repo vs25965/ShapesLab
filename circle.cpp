@@ -14,3 +14,4 @@ int circle:: getPerimeter(int radius, int na) {
    int perimeter = (2*3.14 * radius);
    return perimeter;
 }
+//jofjjdofj;
