@@ -4,10 +4,21 @@
 
 #ifndef SQUARE_H
 #define SQUARE_H
+#include "rectangle.h"
 
 
+class Square : public rectangle{
 
-class Square {
+public: 
+
+	int area;
+	int perimeter;
+
+	Square(int side)
+	{
+		int width = side;
+		int height = side;
+	}
 
 };
 

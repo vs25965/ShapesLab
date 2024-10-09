@@ -19,6 +19,10 @@ int main() {
     assert(RightTriangle1.getArea(12,12) == 72);
     assert(RightTriangle1.getPerimeter(12,12) == 16);
 
+    Square Square1 = Square();
+    assert(Square1.getArea(2, 2) == 4);
+    assert(Square1.getperimeter(2, 2) == 8);
+
     cout << "Tests Passed!" << endl;
     return 0;
 
