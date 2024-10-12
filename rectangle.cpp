@@ -16,3 +16,6 @@ int rectangle :: getPerimeter(int width,int height) {
     int perimeter = (width*2) + (height *2);
     return perimeter;
 }
+string rectangle::getNAme() {
+    return "rectangle";
+}
