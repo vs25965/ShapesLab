@@ -25,8 +25,8 @@ int main() {
     assert(RightTriangle1.getPerimeter(12,12) == 16);
 
     Square Square1 = Square();
-    assert(Square1.getArea(1, 1) == 1);
-    assert(Square1.getPerimeter(1, 1) == 4);
+    assert(Square1.getArea(2, 2) == 4);
+    assert(Square1.getPerimeter(2, 2) == 8);
 
     IsocelesRightTriangle IsocelesRightTriangle1 = IsocelesRightTriangle();
     assert(IsocelesRightTriangle1.getArea(12) == 72);
