@@ -5,12 +5,14 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 #include "Shape.h"
+#include <string>
 using namespace std;
 
 class rectangle : public Shape {
 public:
     int getArea(int,int) override;
     int getPerimeter(int,int) override;
+    string getName() override;
 
     int area = 0;
     int perimeter= 0;
