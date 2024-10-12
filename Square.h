@@ -9,17 +9,6 @@
 
 class Square : public rectangle{
 
-public: 
-
-	int area;
-	int perimeter;
-
-	Square(int side)
-	{
-		int width = side;
-		int height = side;
-	}
-
 };
 
 

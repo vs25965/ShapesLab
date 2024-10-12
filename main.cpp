@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <iostream>
+
+#include "IsocelesRightTriangle.h"
+#include "Square.h"
 using namespace std;
 #include "Shape.h"
 #include "rectangle.h"
 #include "circle.h"
 #include "RightTriangle.h"
+#include "IsocelesRightTriangle.h"
+#include "Square.h"
 #include <cassert>
 int main() {
     //Rectangle Tests
@@ -21,8 +26,11 @@ int main() {
 
     Square Square1 = Square();
     assert(Square1.getArea(2, 2) == 4);
-    assert(Square1.getperimeter(2, 2) == 8);
+    assert(Square1.getPerimeter(2, 2) == 8);
 
+    IsocelesRightTriangle IsocelesRightTriangle1 = IsocelesRightTriangle();
+    assert(IsocelesRightTriangle1.getArea(12) == 72);
+    assert(IsocelesRightTriangle1.getPerimeter(12) == 40);
     cout << "Tests Passed!" << endl;
     return 0;
 
