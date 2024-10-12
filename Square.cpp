@@ -3,3 +3,7 @@
 //
 
 #include "Square.h"
+class Square{
+
+
+};

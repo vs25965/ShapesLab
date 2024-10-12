@@ -11,7 +11,7 @@ class rectangle : public Shape {
 public:
     int getArea(int,int) override;
     int getPerimeter(int,int) override;
-private:
+
     int area = 0;
     int perimeter= 0;
 
