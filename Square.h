@@ -7,7 +7,7 @@
 
 
 
-class Square {
+class Square : public rectangle{
 
 };
 

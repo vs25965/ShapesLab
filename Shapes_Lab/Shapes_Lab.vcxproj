@@ -127,7 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="_circle.cpp" />
     <ClCompile Include="Shapes_Lab.cpp" />
+    <ClCompile Include="_rectangle.cpp" />
+    <ClCompile Include="_righttriangle.cpp" />
+    <ClCompile Include="_shape.cpp" />
+    <ClCompile Include="_square.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_circle.h" />
+    <ClInclude Include="_rectangle.h" />
+    <ClInclude Include="_righttriangle.h" />
+    <ClInclude Include="_shape.h" />
+    <ClInclude Include="_square.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

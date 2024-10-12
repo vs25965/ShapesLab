@@ -18,6 +18,10 @@ int main() {
     RightTriangle RightTriangle1 = RightTriangle();
     assert(RightTriangle1.getArea(12,12) == 72);
     assert(RightTriangle1.getPerimeter(12,12) == 16);
+    Square Square1 = Square();
+    assert(Square1.getArea(1, 1) == 1);
+    assert(Square1.getPerimeter(1, 1) == 4);
+    
 
     cout << "Tests Passed!" << endl;
     return 0;
