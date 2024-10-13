@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <iostream>
-using namespace std;
 #include "Shape.h"
 #include "rectangle.h"
 #include "circle.h"
 #include "RightTriangle.h"
 #include <cassert>
 #include "IsocelesRightTriangle.h"
+#include <string>
 
+using namespace std;
 
 string printAreaToScreen(Shape* s, int length, int width) {
 
@@ -37,19 +38,19 @@ int main() {
     IsocelesRightTriangle IsocelesRightTriangle1 = IsocelesRightTriangle();
     assert(IsocelesRightTriangle1.getArea(12) == 72);
     assert(IsocelesRightTriangle1.getPerimeter(12) == 40);
-    cout << "Tests Passed!" << endl;
+  
     
-
-    cout << "Tests Passed!" << endl;
 
 
     //Example part 3 
 
-    _shape* pointer1 = &rectangle1;
-    cout << printAreaToScreen(pointer1, 2, 2) << endl;
+    Shape* pointer1 = &rectangle1;
+    assert(printAreaToScreen(pointer1, 2, 2) == "The area of the rectangle is 4");
+    Shape* pointer2 = &RightTriangle1;
+    assert(printAreaToScreen(pointer2, 12, 12) == "The area of the Right Triangle is 72");
 
 
-
+    cout << "Tests Passed!" << endl;
 
     return 0;
 

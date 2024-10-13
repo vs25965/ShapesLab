@@ -14,3 +14,6 @@ int _righttriangle::getPerimeter(int base, int height) {
     int perimeter = sqrt(pow(base, 2) + pow(height, 2));
     return perimeter;
 }
+string _righttriangle::getName() {
+    return "Right Triangle";
+}

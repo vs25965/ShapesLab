@@ -12,3 +12,6 @@ int _rectangle::getPerimeter(int width, int height) {
     int perimeter = (width * 2) + (height * 2);
     return perimeter;
 }
+string _rectangle::getName() {
+    return "rectangle";
+}
