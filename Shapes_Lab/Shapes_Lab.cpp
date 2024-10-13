@@ -2,21 +2,21 @@
 //
 #include <stdio.h>
 #include <iostream>
-using namespace std;
 #include "_shape.h"
 #include "_rectangle.h"
 #include "_circle.h"
 #include "_righttriangle.h"
 #include "_square.h"
 #include <cassert>
+#include <string>
 
-string printAreaToScreen(_shape* s)
-{
+using namespace std;
 
+string printAreaToScreen(_shape* s, int length, int width) {
 
+    return "The area of the " + s->getName() + " is " + to_string(s->getArea(length, width));
 
 }
-
 
 int main() {
     //Rectangle Tests
@@ -35,9 +35,17 @@ int main() {
     assert(square1.getPerimeter(1, 1) == 4);
    
     
-
-
+    _shape* pointer1 = &rectangle1;
+    assert(printAreaToScreen(pointer1, 2, 2) == "The area of the rectangle is 4");
+    _shape* pointer2 = &RightTriangle1;
+   assert(printAreaToScreen(pointer2, 12, 12) == "The area of the Right Triangle is 72");
+    
     cout << "Tests Passed!" << endl;
+
+
+   
+
+   
     return 0;
 
 
